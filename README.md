@@ -1,41 +1,49 @@
-회원 가입 REST API
-JSON 값으로 REST POST 요청시 JSON 값으로 리턴해주는 API
+**Show User**
+----
+  Returns json data about a single user.
 
-URL
+* **URL**
 
-/member
+  /users/:id
 
-Method:
+* **Method:**
 
-POST
+  `GET`
+  
+*  **URL Params**
 
-Required:
+   **Required:**
+ 
+   `id=[integer]`
 
-id=[integer]
+* **Data Params**
 
-Data Params
+  None
 
-None
+* **Success Response:**
 
-Success Response:
+  * **Code:** 200 <br />
+    **Content:** `{ id : 12, name : "Michael Bloom" }`
+ 
+* **Error Response:**
 
-Code: 200 
-Content: { id : 12, name : "Michael Bloom" }
-Error Response:
+  * **Code:** 404 NOT FOUND <br />
+    **Content:** `{ error : "User doesn't exist" }`
 
-Code: 404 NOT FOUND 
-Content: { error : "User doesn't exist" }
-OR
+  OR
 
-Code: 401 UNAUTHORIZED 
-Content: { error : "You are unauthorized to make this request." }
-Sample Call:
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{ error : "You are unauthorized to make this request." }`
 
-  $.ajax({
-    url: "/users/1",
-    dataType: "json",
-    type : "GET",
-    success : function(r) {
-      console.log(r);
-    }
-  });
+* **Sample Call:**
+
+  ```javascript
+    $.ajax({
+      url: "/users/1",
+      dataType: "json",
+      type : "GET",
+      success : function(r) {
+        console.log(r);
+      }
+    });
+  ```
