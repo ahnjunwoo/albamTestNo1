@@ -12,7 +12,7 @@ public class Member {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
 	
-	private String username; //회원이름
+	private String username; //회원이름ㅇ
 	private String password; //회원 패스워드
 	private String account; //회원 계정(전 이메일 형식으로 픽스!)
 	
