@@ -1,24 +1,28 @@
-**Show User**
+**회원가입**
 ----
-  Returns json data about a single user.
+  회원가입
 
 * **URL**
 
-  /users/:id
+  /members
 
 * **Method:**
 
-  `GET`
+  `POST`
   
 *  **URL Params**
 
    **Required:**
  
-   `id=[integer]`
+  None
 
 * **Data Params**
 
-  None
+  `{
+	"username":"ahnjunwoo"
+	,"password":"1234"
+	,"account":"cutesboy3@naver.com"
+   }`
 
 * **Success Response:**
 
