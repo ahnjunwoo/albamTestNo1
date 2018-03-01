@@ -27,7 +27,7 @@ spring boot 1.5.10.RELEASE , mysql, AWSZON ec2, JPA, lombok
 * **Success Response:**
 
   * **Code:** 200 OK<br />
-    **Content:** `{ "code" : "S0001", message : "정상처리" }`
+    **Content:** `{ "code" : "S0000", message : "정상처리" }`
  
 * **Error Response:**
 
