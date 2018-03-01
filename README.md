@@ -4,10 +4,7 @@
   
 구현기술
 ----
-Application and Data
-1.spring boot 1.5.10.RELEASE
-2.mysql
-3.AWSZON ec2
+spring boot 1.5.10.RELEASE , mysql, AWSZON ec2, JPA, lombok
 
 * **URL**
 
