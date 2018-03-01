@@ -14,8 +14,6 @@ import com.albam.repository.MemberRepository;
 public class MemberService {
 	@Autowired
 	MemberRepository reop;
-	@Autowired
-	RestExceptionHandler handler;
 	/**
 	 * - 코드 관리 : enum 클래스를 이용하여 구현 (다른방법으로 공통 메세지 처리 propertiese파일로 할수 있다..)
 	 * 
